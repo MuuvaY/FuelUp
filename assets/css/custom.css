@@ -413,7 +413,7 @@ a:hover {
 
 /** Malo **/
 
-.titre_intérieur_à_propos::after {
+.titre_interieur_a_propos::after {
     content: "";
     display: block;
     position: absolute;
