@@ -176,4 +176,62 @@ button, input, optgroup, select, textarea{
         color: black;
         font-size: 2rem;
     }
+/* Btn */
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-primary:focus {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary {
+  background: #afed00;
+  color: #000;
+  transition: all 0.4s;
+}
+
+.btn-secondary:hover {
+  background: #000;
+  color: #fff;
+}
+
+.btn-secondary:focus {
+  background: #000;
+  color: #fff;
+}
+
+/* Modal dialog */
+
+.col-md-6 {
+  position: relative;
+}
+
+.green-rectangle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100px;
+  background: #afed00;
+}
+
+#blockcart-modal .product-name {
+  font-size: 1.5rem;
+  color: #000;
+  background-color: #afed00;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: -2rem;
 }

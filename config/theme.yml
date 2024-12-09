@@ -1,10 +1,10 @@
 name: fuelup
-display_name: FuelUp
-version: 2.1.3
+display_name: fuelup
+version: 1.0.0
 author:
-  name: "PrestaShop SA and Contributors"
-  email: "contact@prestashop.com"
-  url: "https://www.prestashop-project.org"
+  name: "Raphaël, Malo, Eliot, Marius"
+  email: "contact@rtiphonet.fr"
+  url: "https://google.fr"
 
 meta:
   compatibility:
