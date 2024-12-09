@@ -168,14 +168,16 @@ button, input, optgroup, select, textarea{
     display: flex;
     flex-direction: column;
 }
-@media (max-width: 767px){
-    #header .header-top>.container>.row:first-of-type{
+@media (max-width: 767px) {
+    #header .header-top > .container > .row:first-of-type {
         display: block;
     }
-    #header .header-top a[data-depth="0"]{
+
+    #header .header-top a[data-depth="0"] {
         color: black;
         font-size: 2rem;
     }
+}
 /* Btn */
 
 .btn-primary {
