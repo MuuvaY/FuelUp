@@ -413,7 +413,7 @@ a:hover {
 
 /** Malo **/
 
-.elementor-element.elementor-element-4a978a84.titre_interieur_a_propos.elementor-widget.elementor-widget-heading::after {
+.titre_interieur_a_propos::after {
     content: "";
     display: block;
     position: absolute;
