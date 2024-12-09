@@ -52,11 +52,10 @@ global_settings:
   modules:
     to_enable:
       - ps_linklist
+      - ps_mainmenu
   hooks:
     modules_to_hook:
       displayAfterBodyOpeningTag:
-        - blockreassurance
-      displayNavFullWidth:
         - blockreassurance
       displayAdminCustomers:
         - blockwishlist
@@ -65,16 +64,8 @@ global_settings:
         - psgdpr
       displayMyAccountBlock:
         - blockwishlist
-      displayNav1:
-        - ps_contactinfo
-      displayNav2:
-        - ps_languageselector
-        - ps_currencyselector
-        - ps_customersignin
-        - ps_shoppingcart
       displayTop:
         - ps_mainmenu
-        - ps_searchbar
       displayHome:
         - ps_imageslider
         - ps_featuredproducts
