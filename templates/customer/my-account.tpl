@@ -30,7 +30,6 @@
 
 {block name='page_content'}
   <div class="row">
-    <h1>bonjour eliotgti branc</h1>
     <div class="links">
       <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="identity-link" href="{$urls.pages.identity}">
         <span class="link-item">

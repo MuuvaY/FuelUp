@@ -10,10 +10,135 @@ textarea {
   font-family: Roboto, sans-serif;
 }
 
-#wrapper {
-  /* background: #000; */
-}
+/* Btn */
 
 .btn-primary {
-  background-color: red;
+  background: #111111;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.btn-primary:hover {
+  background-color: #afed00;
+  color: #111111;
+}
+
+.btn-primary:disabled:hover {
+  background-color: #afed00;
+}
+.btn-primary:focus {
+  background: #fff;
+  color: #111111;
+}
+
+.btn-secondary {
+  background: #afed00;
+  color: #111111;
+  transition: all 0.4s;
+}
+
+.btn-secondary:hover {
+  background: #111111;
+  color: #fff;
+}
+
+.btn-secondary:focus {
+  background: #111111;
+  color: #fff;
+}
+
+/* Modal dialog */
+
+.col-md-6 {
+  position: relative;
+}
+
+.green-rectangle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100px;
+  background: #afed00;
+}
+
+#blockcart-modal .product-name {
+  font-size: 1.5rem;
+  color: #000;
+  background-color: #afed00;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: -2rem;
+}
+
+.btn-wishlist {
+  border: 3px solid #afed00;
+}
+
+.product-quantity {
+  flex-direction: column;
+}
+.wishlist-button-add {
+  border: 3px solid #afed00 !important;
+  height: 2.75rem !important;
+  width: 12rem !important;
+  line-height: inherit !important;
+  box-shadow: none !important;
+  min-width: 0 !important;
+  border-radius: 0 !important;
+}
+.wishlist-button-add i {
+  display: none;
+}
+
+.wishlist-button-add::after {
+  content: "Ajouter à la liste d'envie" !important;
+}
+
+.wishlist-button-product {
+  margin-left: 0 !important;
+}
+
+.current-price {
+  background-color: #afed00;
+  height: 3rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.current-price-value {
+  color: #111111;
+}
+.product-flags li.product-flag {
+  color: #111111;
+  background: #aefd00;
+}
+.tab-content {
+  width: 50%;
+}
+.tabs .nav-tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+}
+.tabs .nav-tabs .nav-link.active {
+  border-bottom: #aefd00 3px solid;
+  color: #aefd00;
+}
+.tabs .nav-tabs .nav-link.active,
+.tabs .nav-tabs .nav-link:hover {
+  border-bottom: #aefd00 3px solid;
+}
+#main .tabs:first-child {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
