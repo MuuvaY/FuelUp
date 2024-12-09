@@ -33,9 +33,14 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-5 divide-right">
+          <div class="col-md-5 column divide-right">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 row1">
+              <div>
+                <div class="green-rectangle"></div>
+                <h6 class="h6 product-name">{$product.name}</h6>
+              </div>
+                
                 {if $product.default_image}
                   <img
                     src="{$product.default_image.medium.url}"
@@ -53,9 +58,7 @@
                   />
                 {/if}
               </div>
-              <div class="col-md-6">
-                <div class="geen-rectangle"></div>
-                <h6 class="h6 product-name">{$product.name}</h6>
+              <div class="col-md-6 row2">
                 <p class="product-price">{$product.price}</p>
                 {hook h='displayProductPriceBlock' product=$product type="unit_price"}
                 {foreach from=$product.attributes item="property_value" key="property"}

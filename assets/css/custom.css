@@ -13,34 +13,36 @@ textarea {
 /* Btn */
 
 .btn-primary {
-  background: #000;
+  background: #111111;
   color: #fff;
   transition: all 0.4s;
 }
 
 .btn-primary:hover {
   background: #fff;
-  color: #000;
+  color: #111111;
+  border: 1px solid #111111;
 }
 
 .btn-primary:focus {
   background: #fff;
-  color: #000;
+  color: #111111;
+  border: 1px solid #111111;
 }
 
 .btn-secondary {
   background: #afed00;
-  color: #000;
+  color: #111111;
   transition: all 0.4s;
 }
 
 .btn-secondary:hover {
-  background: #000;
+  background: #111111;
   color: #fff;
 }
 
 .btn-secondary:focus {
-  background: #000;
+  background: #111111;
   color: #fff;
 }
 
@@ -53,19 +55,103 @@ textarea {
 .green-rectangle {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 100px;
+  top: 0.5rem;
+  width: 2.5rem;
+  height: 1rem;
   background: #afed00;
+  z-index: 1;
 }
 
 #blockcart-modal .product-name {
+  position: relative;
   font-size: 1.5rem;
-  color: #000;
-  background-color: #afed00;
+  color: #111111;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: -2rem;
+  z-index: 2;
+}
+
+#blockcart-modal .product-image {
+  margin: 0;
+}
+.column .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.modal-body .col-md-6.row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.column .row .row2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.modal-body .col-md-6.row2 {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .modal-body .col-md-6.row2 {
+    float: left;
+    width: auto;
+  }
+}
+
+.modal-body .col-md-6 .product-price,
+.product-name,
+.product-quantity {
+  margin-bottom: 0;
+}
+
+#blockcart-modal .modal-body .divide-right span {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* Panier */
+
+.card.cart-container .product-price {
+  color: #111111;
+}
+
+.card.cart-container .separator {
+  border-color: #afed00;
+}
+
+.col-md-6.col-xs-2.price {
+  background-color: #afed00;
+  padding: 0.25rem 0.5rem;
+}
+
+.label:hover {
+  color: #afed00 !important;
+}
+
+.card-block.cart-detailed-subtotals + .cart-summary-totals .cart-total {
+  border-top: 1px solid #afed00;
+}
+
+.card.cart-container .col-xs-2 {
+  width: auto;
+}
+
+.card.cart-container .row.corbeille {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
