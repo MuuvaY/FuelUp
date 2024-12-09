@@ -30,8 +30,8 @@
 
 {block name='page_content'}
   <div class="row">
+    <h1>bonjour eliotgti branc</h1>
     <div class="links">
-
       <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="identity-link" href="{$urls.pages.identity}">
         <span class="link-item">
           <i class="material-icons">&#xE853;</i>
@@ -103,7 +103,7 @@
 {block name='page_footer'}
   {block name='my_account_links'}
     <div class="text-sm-center">
-      <a href="{$urls.actions.logout}" >
+      <a href="{$urls.actions.logout}">
         {l s='Sign out' d='Shop.Theme.Actions'}
       </a>
     </div>
