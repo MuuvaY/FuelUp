@@ -54,6 +54,7 @@
                 {/if}
               </div>
               <div class="col-md-6">
+                <div class="geen-rectangle"></div>
                 <h6 class="h6 product-name">{$product.name}</h6>
                 <p class="product-price">{$product.price}</p>
                 {hook h='displayProductPriceBlock' product=$product type="unit_price"}
