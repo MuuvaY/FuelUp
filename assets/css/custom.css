@@ -188,18 +188,16 @@ a:hover {
 /* Btn */
 
 .btn-primary {
-  background: #111111;
-  background: #111111;
-  color: #fff;
+  background: #afed00;
+  color: #111111;
   transition: all 0.4s;
 }
 
 .btn-primary:hover {
   background: #fff;
-  color: #111111;
+  color: #fff;
   border: 1px solid #111111;
   background-color: #afed00;
-  color: #111111;
 }
 
 .btn-primary:disabled:hover {
@@ -351,22 +349,27 @@ a:hover {
 .wishlist-button-add {
   border: 3px solid #afed00 !important;
   height: 2.75rem !important;
-  width: 12rem !important;
+  width: 4rem !important;
   line-height: inherit !important;
   box-shadow: none !important;
   min-width: 0 !important;
   border-radius: 0 !important;
 }
-.wishlist-button-add i {
+/* .wishlist-button-add i {
   display: none;
 }
 
 .wishlist-button-add::after {
   content: "Ajouter à la liste d'envie" !important;
-}
+} */
 
 .wishlist-button-product {
   margin-left: 0 !important;
+}
+.wishlist-button-add:hover {
+  background-color: #afed00;
+  color: black;
+  opacity: 1 !important;
 }
 
 .current-price {
@@ -387,9 +390,14 @@ a:hover {
   color: #111111;
   background: #aefd00;
 }
-.tab-content {
-  width: 50%;
+.out_of_stock {
+  background-color: red !important;
+  color: #fff !important;
 }
+/* .tab-content {
+  width: 50%;
+} */
+
 .tabs .nav-tabs {
   width: 100%;
   display: flex;
@@ -412,6 +420,58 @@ a:hover {
   align-items: center;
 }
 
+.product-quantity {
+  margin-bottom: 1rem;
+}
+.col-md-6 {
+  margin-top: 2rem;
+}
+.form-control:focus {
+  border-color: #aefd00;
+  outline: 0.1875rem solid #aefd00;
+}
+/* .product-prices div {
+  margin: 0;
+} */
+.product-variants > .product-variants-item {
+  margin: 0;
+}
+.product-information {
+  margin-top: 2rem;
+}
+
+.product-images > li.thumb-container .thumb.selected,
+.product-images > li.thumb-container .thumb:hover {
+  border: #aefd00 3px solid;
+}
+.product-actions .add-to-cart {
+  margin-right: 1rem;
+}
+.section-panier {
+  background-color: #111111;
+}
+.h1-description {
+  color: #fff;
+}
+.page-content.page-cms ul,
+p {
+  color: lightgrey;
+}
+
+.product-actions .control-label {
+  color: white;
+}
+
+#product-availability {
+  color: #fff;
+}
+
+#product-availability .product-last-items,
+#product-availability .product-unavailable {
+  color: red;
+}
+
+
 /** Malo **/
 
 .titre_interieur_a_propos::after {
@@ -423,4 +483,3 @@ a:hover {
     margin-top: 4px;
     background-color: #afed00;
 }
-
