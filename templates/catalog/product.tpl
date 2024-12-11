@@ -51,7 +51,7 @@
   <section id="main">
     <meta content="{$product.url}">
     <div class="row product-container js-product-container">
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         {block name='page_header'}
           <h1 class="h1 h1-product">{block name='page_title'}{$product.name}{/block}</h1>
         {/block}
@@ -72,7 +72,7 @@
           </section>
         {/block}
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 section-panier">
         {block name='page_header_container'}
           {* {block name='page_header'}
             <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
@@ -82,7 +82,7 @@
 
         <div class="product-information">
           {block name='product_description_short'}
-            <h1>Description</h1>
+            <h1 class="h1-description">Description</h1>
             <div id="product-description-short-{$product.id}" class="product-description">
               {$product.description_short nofilter}</div>
           {/block}
