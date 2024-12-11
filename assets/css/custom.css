@@ -115,7 +115,7 @@ a:hover {
   transition: width 0.4s;
 }
 .top-menu a[data-depth="0"] {
-  margin-top: 7px;
+  margin-top: 10px;
   padding: 0;
   position: relative;
   color: white;
@@ -385,6 +385,7 @@ a:hover {
 .current-price-value {
   color: #111111;
 }
+
 .product-flags li.product-flag {
   color: #111111;
   background: #aefd00;
@@ -418,6 +419,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
+
 .product-quantity {
   margin-bottom: 1rem;
 }
@@ -467,4 +469,17 @@ p {
 #product-availability .product-last-items,
 #product-availability .product-unavailable {
   color: red;
+}
+
+
+/** Malo **/
+
+.titre_interieur_a_propos::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    margin-top: 4px;
+    background-color: #afed00;
 }
