@@ -52,6 +52,9 @@
     <meta content="{$product.url}">
     <div class="row product-container js-product-container">
       <div class="col-md-6">
+        {block name='page_header'}
+          <h1 class="h1 h1-product">{block name='page_title'}{$product.name}{/block}</h1>
+        {/block}
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -71,16 +74,15 @@
       </div>
       <div class="col-md-6">
         {block name='page_header_container'}
-          {block name='page_header'}
+          {* {block name='page_header'}
             <h1 class="h1">{block name='page_title'}{$product.name}{/block}</h1>
-          {/block}
+          {/block} *}
         {/block}
-        {block name='product_prices'}
-          {include file='catalog/_partials/product-prices.tpl'}
-        {/block}
+
 
         <div class="product-information">
           {block name='product_description_short'}
+            <h1>Description</h1>
             <div id="product-description-short-{$product.id}" class="product-description">
               {$product.description_short nofilter}</div>
           {/block}
@@ -90,7 +92,9 @@
               {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
             {/block}
           {/if}
-
+          {block name='product_prices'}
+            {include file='catalog/_partials/product-prices.tpl'}
+          {/block}
           <div class="product-actions js-product-actions">
             {block name='product_buy'}
               <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
@@ -135,9 +139,9 @@
 
           </div>
 
-          {block name='hook_display_reassurance'}
+          {* {block name='hook_display_reassurance'}
             {hook h='displayReassurance'}
-          {/block}
+          {/block} *}
 
 
         </div>

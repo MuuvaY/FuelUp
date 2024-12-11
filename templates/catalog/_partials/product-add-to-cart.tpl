@@ -41,6 +41,8 @@
             <i class="material-icons shopping-cart">&#xE547;</i>
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
+          {hook h='displayProductActions' product=$product}
+
         </div>
 
         {* <div class="add-wishlilst">
@@ -49,8 +51,10 @@
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
         </div> *}
+        {* <div class="add2">
 
-        {hook h='displayProductActions' product=$product}
+          {hook h='displayProductActions' product=$product}
+        </div> *}
       </div>
     {/block}
 
@@ -73,10 +77,10 @@
       <p class="product-minimal-quantity js-product-minimal-quantity">
         {if $product.minimal_quantity > 1}
           {l
-                                                                s='The minimum purchase order quantity for the product is %quantity%.'
-                                                                d='Shop.Theme.Checkout'
-                                                                sprintf=['%quantity%' => $product.minimal_quantity]
-                                                                }
+                                                                                              s='The minimum purchase order quantity for the product is %quantity%.'
+                                                                                              d='Shop.Theme.Checkout'
+                                                                                              sprintf=['%quantity%' => $product.minimal_quantity]
+                                                                                              }
         {/if}
       </p>
     {/block}
