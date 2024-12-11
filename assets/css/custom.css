@@ -194,7 +194,6 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background: #fff;
   color: #fff;
   border: 1px solid #111111;
   background-color: #afed00;
@@ -207,26 +206,26 @@ a:hover {
   background: #fff;
   color: #111111;
   border: 1px solid #111111;
-  color: #111111;
 }
 
 .btn-secondary {
   background: #afed00;
-  color: #111111;
   color: #111111;
   transition: all 0.4s;
 }
 
 .btn-secondary:hover {
   background: #111111;
-  background: #111111;
   color: #fff;
 }
 
 .btn-secondary:focus {
   background: #111111;
-  background: #111111;
   color: #fff;
+}
+
+.product-cover{
+  border: solid #AFED00;
 }
 
 /* Modal dialog */
@@ -448,10 +447,10 @@ a:hover {
   margin-right: 1rem;
 }
 .section-panier {
-  background-color: #111111;
+  border: solid;
 }
 .h1-description {
-  color: #fff;
+  color: black;
 }
 .page-content.page-cms ul,
 p {
@@ -459,7 +458,7 @@ p {
 }
 
 .product-actions .control-label {
-  color: white;
+  color: black;
 }
 
 #product-availability {
