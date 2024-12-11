@@ -119,7 +119,7 @@ a:hover {
   transition: width 0.4s;
 }
 .top-menu a[data-depth="0"] {
-  margin-top: 7px;
+  margin-top: 10px;
   padding: 0;
   position: relative;
   color: white;
@@ -192,18 +192,15 @@ a:hover {
 /* Btn */
 
 .btn-primary {
-  background: #111111;
-  background: #111111;
-  color: #fff;
+  background: #afed00;
+  color: #111111;
   transition: all 0.4s;
 }
 
 .btn-primary:hover {
-  background: #fff;
-  color: #111111;
+  color: #fff;
   border: 1px solid #111111;
   background-color: #afed00;
-  color: #111111;
 }
 
 .btn-primary:disabled:hover {
@@ -213,26 +210,26 @@ a:hover {
   background: #fff;
   color: #111111;
   border: 1px solid #111111;
-  color: #111111;
 }
 
 .btn-secondary {
   background: #afed00;
-  color: #111111;
   color: #111111;
   transition: all 0.4s;
 }
 
 .btn-secondary:hover {
   background: #111111;
-  background: #111111;
   color: #fff;
 }
 
 .btn-secondary:focus {
   background: #111111;
-  background: #111111;
   color: #fff;
+}
+
+.product-cover{
+  border: solid #AFED00;
 }
 
 /* Modal dialog */
@@ -357,22 +354,27 @@ a:hover {
 .wishlist-button-add {
   border: 3px solid #afed00 !important;
   height: 2.75rem !important;
-  width: 12rem !important;
+  width: 4rem !important;
   line-height: inherit !important;
   box-shadow: none !important;
   min-width: 0 !important;
   border-radius: 0 !important;
 }
-.wishlist-button-add i {
+/* .wishlist-button-add i {
   display: none;
 }
 
 .wishlist-button-add::after {
   content: "Ajouter à la liste d'envie" !important;
-}
+} */
 
 .wishlist-button-product {
   margin-left: 0 !important;
+}
+.wishlist-button-add:hover {
+  background-color: #afed00;
+  color: black;
+  opacity: 1 !important;
 }
 
 .current-price {
@@ -388,13 +390,19 @@ a:hover {
 .current-price-value {
   color: #111111;
 }
+
 .product-flags li.product-flag {
   color: #111111;
   background: #aefd00;
 }
-.tab-content {
-  width: 50%;
+.out_of_stock {
+  background-color: red !important;
+  color: #fff !important;
 }
+/* .tab-content {
+  width: 50%;
+} */
+
 .tabs .nav-tabs {
   width: 100%;
   display: flex;
@@ -495,4 +503,68 @@ body#checkout section.checkout-step .address-item.selected {
 
 .done {
   color: #afed00;
+
+.product-quantity {
+  margin-bottom: 1rem;
+}
+.col-md-6 {
+  margin-top: 2rem;
+}
+.form-control:focus {
+  border-color: #aefd00;
+  outline: 0.1875rem solid #aefd00;
+}
+/* .product-prices div {
+  margin: 0;
+} */
+.product-variants > .product-variants-item {
+  margin: 0;
+}
+.product-information {
+  margin-top: 2rem;
+}
+
+.product-images > li.thumb-container .thumb.selected,
+.product-images > li.thumb-container .thumb:hover {
+  border: #aefd00 3px solid;
+}
+.product-actions .add-to-cart {
+  margin-right: 1rem;
+}
+.section-panier {
+  border: solid;
+}
+.h1-description {
+  color: black;
+}
+.page-content.page-cms ul,
+p {
+  color: lightgrey;
+}
+
+.product-actions .control-label {
+  color: black;
+}
+
+#product-availability {
+  color: #fff;
+}
+
+#product-availability .product-last-items,
+#product-availability .product-unavailable {
+  color: red;
+}
+
+
+/** Malo **/
+
+.titre_interieur_a_propos::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    margin-top: 4px;
+    background-color: #afed00;
+
 }
