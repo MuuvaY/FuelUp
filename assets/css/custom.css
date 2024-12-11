@@ -12,6 +12,10 @@ textarea {
   font-style: normal;
 }
 
+a {
+  color: #afed00;
+}
+
 #wrapper {
   background: white;
 }
@@ -338,6 +342,8 @@ a:hover {
   gap: 1rem;
 }
 
+/* Marius */
+
 .btn-wishlist {
   border: 3px solid #afed00;
 }
@@ -419,6 +425,85 @@ a:hover {
   align-items: center;
 }
 
+/* Réassurance */
+
+#blockcart-modal .modal-header,
+#product #block-reassurance {
+  background-color: #afed00;
+  color: #111111;
+}
+#block-reassurance ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#block-reassurance li {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.25);
+}
+
+#block-reassurance li .block-reassurance-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+#block-reassurance li .block-reassurance-item .h6 {
+  text-align: center;
+}
+
+/* Order */
+
+body#checkout .cart-grid-right .card .cart-summary-subtotals-container {
+  border-top: 1px solid #afed00;
+  border-bottom: 1px solid #afed00;
+}
+
+.product-name a {
+  color: #afed00;
+}
+
+.cart-summary-line.cart-total .value {
+  background-color: #afed00;
+  padding: 0.25rem 0.5rem;
+}
+
+.js-show-details {
+  color: #afed00;
+}
+
+.input-group .input-group-btn > .btn[data-action="show-password"] {
+  padding: 0.78rem 1rem;
+  color: #111111;
+  background: #aeed005d;
+}
+
+.form-control {
+  background: #aeed005d;
+}
+
+body#checkout section.checkout-step.-reachable.-current .step-number {
+  background-color: #afed00;
+}
+
+body#checkout section.checkout-step .address-item.selected {
+  border: #afed00 3px solid;
+}
+
+.custom-radio input[type="radio"]:checked + span {
+  background-color: #afed00;
+}
+
+.js-address-form a {
+  color: #afed00;
+}
+
+.done {
+  color: #afed00;
+
 .product-quantity {
   margin-bottom: 1rem;
 }
@@ -481,4 +566,5 @@ p {
     height: 5px;
     margin-top: 4px;
     background-color: #afed00;
+
 }
