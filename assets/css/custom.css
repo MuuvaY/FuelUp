@@ -399,6 +399,21 @@ a:hover {
   background-color: red !important;
   color: #fff !important;
 }
+
+.btn-primary.active, .btn-primary:active, .open > .btn-primary.dropdown-toggle{
+  background-color: #AFED00;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .btn-primary.dropdown-toggle.focus, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle:hover{
+  background-color: #AFED00;
+}
+a:focus, a:hover{
+  color: #AFED00;
+}
+.product-price{
+  color: #AFED00;
+}
+
 /* .tab-content {
   width: 50%;
 } */
@@ -482,7 +497,7 @@ body#checkout .cart-grid-right .card .cart-summary-subtotals-container {
 }
 
 .form-control {
-  background: #aeed005d;
+  background: #afed0014;
 }
 
 body#checkout section.checkout-step.-reachable.-current .step-number {

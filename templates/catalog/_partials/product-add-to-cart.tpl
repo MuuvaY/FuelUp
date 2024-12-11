@@ -41,21 +41,10 @@
             <i class="material-icons shopping-cart">&#xE547;</i>
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
-          {hook h='displayProductActions' product=$product}
+
+              {hook h='displayProductActions' product=$product}
 
         </div>
-
-        {* <div class="add-wishlilst">
-          <button class="btn  add-to-cart btn-wishlist" data-button-action="add-to-cart" type="submit"
-            {if !$product.add_to_cart_url} disabled {/if}>
-            {l s='Add to cart' d='Shop.Theme.Actions'}
-          </button>
-        </div> *}
-        {* <div class="add2">
-
-          {hook h='displayProductActions' product=$product}
-        </div> *}
-      </div>
     {/block}
 
     {block name='product_availability'}
