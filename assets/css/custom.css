@@ -532,9 +532,7 @@ body#checkout section.checkout-step .address-item.selected {
 .product-actions .add-to-cart {
   margin-right: 1rem;
 }
-.section-panier {
-  border: solid;
-}
+
 .h1-description {
   color: black;
 }
