@@ -232,8 +232,8 @@ a:hover {
   color: #fff;
 }
 
-.product-cover{
-  border: solid #AFED00;
+.product-cover {
+  border: solid #afed00;
 }
 
 /* Modal dialog */
@@ -404,18 +404,29 @@ a:hover {
   color: #fff !important;
 }
 
-.btn-primary.active, .btn-primary:active, .open > .btn-primary.dropdown-toggle{
-  background-color: #AFED00;
+.btn-primary.active,
+.btn-primary:active,
+.open > .btn-primary.dropdown-toggle {
+  background-color: #afed00;
 }
 
-.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .btn-primary.dropdown-toggle.focus, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle:hover{
-  background-color: #AFED00;
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .btn-primary.dropdown-toggle.focus,
+.open > .btn-primary.dropdown-toggle:focus,
+.open > .btn-primary.dropdown-toggle:hover {
+  background-color: #afed00;
 }
-a:focus, a:hover{
-  color: #AFED00;
+a:focus,
+a:hover {
+  color: #afed00;
 }
-.product-price{
-  color: #AFED00;
+.product-price {
+  color: #afed00;
 }
 
 /* .tab-content {
@@ -527,6 +538,10 @@ body#checkout section.checkout-step .address-item.selected {
 .product-quantity {
   margin-bottom: 1rem;
 }
+
+.bootstrap-touchspin {
+  display: flex;
+}
 /*.col-md-6 {*/
 /*  margin-top: 2rem;*/
 /*}*/
@@ -580,12 +595,11 @@ p {
 /** Malo **/
 
 .titre_interieur_a_propos::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 40%;
-    height: 5px;
-    margin-top: 4px;
-    background-color: #afed00;
-
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 5px;
+  margin-top: 4px;
+  background-color: #afed00;
 }
