@@ -573,6 +573,9 @@ p {
   color: red;
 }
 
+.product-line-grid-right .cart-line-product-actions, .product-line-grid-right .product-price{
+  line-height: unset;
+}
 
 /** Malo **/
 
