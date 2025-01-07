@@ -20,11 +20,11 @@ a {
   background: white;
 }
 
-#index main #wrapper{
+#index main #wrapper {
   padding-top: unset;
 }
 
-body#checkout a:hover{
+body#checkout a:hover {
   color: unset;
 }
 
@@ -592,11 +592,10 @@ p {
   color: red;
 }
 
-.product-line-grid-right .cart-line-product-actions, .product-line-grid-right .product-price{
+.product-line-grid-right .cart-line-product-actions,
+.product-line-grid-right .product-price {
   line-height: unset;
 }
-
-
 
 /** Malo **/
 
@@ -608,4 +607,10 @@ p {
   height: 5px;
   margin-top: 4px;
   background-color: #afed00;
+}
+
+/* Cookie section */
+
+.cookie-div {
+  display: flex;
 }

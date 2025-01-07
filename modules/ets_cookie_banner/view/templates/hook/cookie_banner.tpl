@@ -22,14 +22,17 @@
     </style>
     <div class="ets_cookie_banber_block {$ETS_CB_COOKIE_BANNER_POSITION|escape:'html':'UTF-8'}">
         <span class="close_cookie"></span>
-        <div class="ets_cookie_banner_content">
-            {$ETS_CB_COOKIE_BANNER_CONTENT nofilter}
+        <div class="cookie-div">
+            <div class="ets_cookie_banner_content">
+                {$ETS_CB_COOKIE_BANNER_CONTENT nofilter}
+            </div>
+            <div class="ets_cookie_banner_footer">
+                <a class="btn btn-primary full-right ets-cb-btn-ok" href="{$link_submit|escape:'html':'UTF-8'}" >{if $ETS_CB_COOKIE_BUTTON_LABEL}{$ETS_CB_COOKIE_BUTTON_LABEL|escape:'html':'UTF-8'}{else}{l s='Ok' mod='ets_cookie_banner'}{/if}</a>
+                {if $ETS_CB_NOT_ACCEPT_LABEL|trim}
+                    <a class="btn btn-primary full-left ets-cb-btn-not-ok" href="{if $ETS_CB_NOT_ACCEPT_URL}{$ETS_CB_NOT_ACCEPT_URL|escape:'html':'UTF-8'}{else}#{/if}" >{if $ETS_CB_NOT_ACCEPT_LABEL}{$ETS_CB_NOT_ACCEPT_LABEL|escape:'html':'UTF-8'}{else}{l s='Not accept' mod='ets_cookie_banner'}{/if}</a>
+                {/if}
         </div>
-        <div class="ets_cookie_banner_footer">
-            <a class="btn btn-primary full-right ets-cb-btn-ok" href="{$link_submit|escape:'html':'UTF-8'}" >{if $ETS_CB_COOKIE_BUTTON_LABEL}{$ETS_CB_COOKIE_BUTTON_LABEL|escape:'html':'UTF-8'}{else}{l s='Ok' mod='ets_cookie_banner'}{/if}</a>
-            {if $ETS_CB_NOT_ACCEPT_LABEL|trim}
-                <a class="btn btn-primary full-left ets-cb-btn-not-ok" href="{if $ETS_CB_NOT_ACCEPT_URL}{$ETS_CB_NOT_ACCEPT_URL|escape:'html':'UTF-8'}{else}#{/if}" >{if $ETS_CB_NOT_ACCEPT_LABEL}{$ETS_CB_NOT_ACCEPT_LABEL|escape:'html':'UTF-8'}{else}{l s='Not accept' mod='ets_cookie_banner'}{/if}</a>
-            {/if}
         </div>
+        
     </div>
 {/if}
