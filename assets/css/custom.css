@@ -614,3 +614,16 @@ p {
 .cookie-div {
   display: flex;
 }
+.cookie-div p {
+  color: #111111;
+}
+
+.ets_cookie_banner_footer {
+  padding-top: 0;
+}
+
+@media (min-width: 700px) {
+  .cookie-div {
+    flex-direction: column;
+  }
+}
