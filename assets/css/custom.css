@@ -18,6 +18,7 @@ a {
 
 #wrapper {
   background: white;
+  padding-top: unset;
 }
 
 /* Accueuil*/
@@ -523,9 +524,9 @@ body#checkout section.checkout-step .address-item.selected {
 .product-quantity {
   margin-bottom: 1rem;
 }
-.col-md-6 {
-  margin-top: 2rem;
-}
+/*.col-md-6 {*/
+/*  margin-top: 2rem;*/
+/*}*/
 .form-control:focus {
   border-color: #aefd00;
   outline: 0.1875rem solid #aefd00;
