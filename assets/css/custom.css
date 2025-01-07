@@ -624,7 +624,7 @@ p {
   margin-top: 0px;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .cookie-div {
     display: flex;
     flex-direction: column;
