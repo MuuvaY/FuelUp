@@ -63,15 +63,15 @@
           {/block}
 
           <div class="row">
-            {block name="left_column"}
-              <div id="left-column" class="col-xs-12 col-md-4 col-lg-3">
-                {if $page.page_name == 'product'}
-                  {hook h='displayLeftColumnProduct' product=$product category=$category}
-                {else}
-                  {hook h="displayLeftColumn"}
-                {/if}
-              </div>
-            {/block}
+{*            {block name="left_column"}*}
+{*              <div id="left-column" class="col-xs-12 col-md-4 col-lg-3">*}
+{*                {if $page.page_name == 'product'}*}
+{*                  {hook h='displayLeftColumnProduct' product=$product category=$category}*}
+{*                {else}*}
+{*                  {hook h="displayLeftColumn"}*}
+{*                {/if}*}
+{*              </div>*}
+{*            {/block}*}
 
             {block name="content_wrapper"}
               <div id="content-wrapper" class="js-content-wrapper left-column right-column col-md-4 col-lg-3">
