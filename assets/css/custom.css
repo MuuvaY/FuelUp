@@ -24,6 +24,10 @@ a {
   padding-top: unset;
 }
 
+body#checkout a:hover{
+  color: unset;
+}
+
 /* Accueuil*/
 #header {
   background: #111111;
@@ -591,6 +595,8 @@ p {
 .product-line-grid-right .cart-line-product-actions, .product-line-grid-right .product-price{
   line-height: unset;
 }
+
+
 
 /** Malo **/
 
