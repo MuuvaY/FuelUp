@@ -18,6 +18,9 @@ a {
 
 #wrapper {
   background: white;
+}
+
+#index main #wrapper{
   padding-top: unset;
 }
 
