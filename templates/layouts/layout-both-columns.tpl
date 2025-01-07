@@ -57,12 +57,20 @@
         {/block}
 
         {hook h="displayWrapperTop"}
-        <div class="container">
+        <div class="container" style="margin: 0;
+    justify-content: center;
+    display: flex
+;
+    width: 100%;
+    flex-direction: column;">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}
 
-          <div class="row">
+          <div class="row" style="margin: 0;
+    display: flex
+;
+    justify-content: center;">
 {*            {block name="left_column"}*}
 {*              <div id="left-column" class="col-xs-12 col-md-4 col-lg-3">*}
 {*                {if $page.page_name == 'product'}*}
